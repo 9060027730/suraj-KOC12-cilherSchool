@@ -1,0 +1,163 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	font-size:20px;
+	overflow-x:hidden;
+	color:white;
+	font-family: 'Flamenco', cursive;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/bacg.jpg);
+	background-size: cover; 
+	height:100vh;
+	background-repeat:no-repeat;
+	background-position:center;
+	
+}
+.clearfix:after{
+	content:".";
+	visibility:hidden;
+	display:block;
+	height:0px;
+	clear:both;
+}
+.row{
+	max-width:1180px;
+	margin:0 auto;
+}
+.logo{
+	height:120px;
+	width:auto;
+	float:left;
+	margin-top:20px;
+}
+.main-nav{
+	float:right;
+	margin-top:60px;
+}
+.main-nav li{
+	display: inline-block;
+	list-style:none;
+	margin-left:60px;
+}
+.main-nav li a{
+	padding:5px 0;
+	color:#fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:90%;
+	font-weight:100px;
+}
+.main-nav li a:hover{
+	border-bottom:2px solid #F00F0B;
+}
+.main-content-header{
+	width:1180px;
+	position:absolute;
+	top:55%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+h1{
+	color:#FFFFFF ;
+	font-size:240%;
+	word-spacing:5px;
+	letter-spacing:3px;
+	margin-bottom:20px;
+	text-transform:uppercase;
+}
+.btn{
+	display:inline-block;
+	padding:10px 30px;
+	font-weight:lighter;
+	text-decoration:none;
+	text-transform:uppercase;
+	border-radius:200px;
+	transition:background-color 0.2s,border 0.2s,color 0.2;
+}
+.btn-wa{
+	background-color:transparent;
+	color:#48EA3B;
+	margin-right:15px;
+	border:2px solid #48EA3B;
+}
+.btn-wa:hover{
+	background-color:#fff;
+}
+.btn-fb{
+	background-color:transparent;
+	color:#5456E6;
+	margin-right:15px;
+	border:2px solid #5456E6;
+}
+.btn-fb:hover{
+	background-color:#fff;
+}
+.btn-insta{
+	background-color:transparent;
+	color:#F309CF;
+	margin-right:15px;
+	border:2px solid #F309CF;
+}
+.btn-insta:hover{
+	background-color:#fff;
+}
+.btn-call{
+	background-color:transparent;
+	color:#00FF00;
+	margin-right:15px;
+	border:2px solid #00FF00;
+}
+.btn-call:hover{
+	background-color:#fff;
+}
+.color-change{
+	animation:color-change 1s infinite;
+}
+@keyframes color-change{
+	0%{color:red;}
+	25%{color:green;}
+	50%{color:yellow;}
+	100%{color:brown;}
+}
+.mobile-icon{display:none;}
+/*/// responsive view////*/
+@media only screen and (max-width:1180px){
+	.main-content-header{
+		width:100%;
+		padding:0 2%;
+	}
+}
+@media only screen and (max-width:998px){
+	h1{font-size:200%;}
+}
+@media only screen and (max-width:900px){
+	h1{font-size:180%;}
+}
+@media only screen and (max-width:800px){
+	h1{font-size:100%;}
+	.main-nav{display:none;}
+	.mobile-icon{
+		display:inline-block;
+		color:#fff;
+		float:right;
+		margin-top:20px;
+		margin-right:20px;
+	}
+	.main-nav{
+		float:left;
+	}
+	.main-nav li{
+		display:block;
+		
+		margin-bottom:10px;
+		padding-top:none;
+	}
+	.btn{
+		display:block;
+		margin-bottom:10px;
+	}
+}
